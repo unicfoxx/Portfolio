@@ -1,0 +1,76 @@
+/* :3 ~Main~ :3 */
+
+body{
+    background-color: black;
+    font-family: fantasy;
+}
+
+/* :3 ~Grids~ :3 */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+    background-color: black;
+}
+
+.para1{
+    grid-column: 3 / span 1;
+    grid-row: 3;
+}
+
+/* :3 ~Text Classes~ :3 */
+
+.title-text{
+    text-align: center;
+    color: rgb(167, 0, 0);
+    font-size: xx-large;
+}
+
+.para-text{
+    color: rgb(130, 0, 0);
+    font-size: x-large;
+}
+
+/* :3 ~Title~ :3 */
+
+.sidenav-titlebox {
+    height: 14%;
+    width: 1600px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(54, 0, 0);
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-size: large;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgb(60, 0, 0);
+}
+
+/* :3 ~Navigation~ :3 */
+
+.sidenav {
+    height: 80%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(167, 0, 0);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 15px 5px 6px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    text-shadow: 2px 2px 1px rgb(88, 0, 0);
+}
+  
+.sidenav a:hover {
+    color: #4b0000;
+}
