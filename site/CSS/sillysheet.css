@@ -27,14 +27,15 @@ body{
     font-size: xx-large;
 }
 
-.para-text{
+.para-text1{
     color: rgb(130, 0, 0);
     font-size: x-large;
+    text-shadow: 2px 2px 1px rgb(54, 0, 0);
 }
 
 /* :3 ~Title~ :3 */
 
-.sidenav-titlebox {
+.title {
     height: 14%;
     width: 1600px;
     position: fixed;
