@@ -1,0 +1,239 @@
+
+/* Main: */
+
+body{
+    background-color: black;
+    font-family: fantasy;
+}
+
+/* Grids: */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+    background-color: black;
+}
+
+.para10{
+    grid-column: 3 / span 1;
+    grid-row: 3;
+}
+
+.para10b{
+    grid-column: 3 / span 1;
+    grid-row: 4;
+}
+
+.para9{
+    grid-column: 3 / span 1;
+    grid-row: 5;
+}
+
+.para9b{
+    grid-column: 3 / span 1;
+    grid-row: 6;
+}
+
+.para8{
+    grid-column: 3 / span 1;
+    grid-row: 7;
+}
+
+.para8b{
+    grid-column: 3 / span 1;
+    grid-row: 8;
+}
+
+.para7{
+    grid-column: 3 / span 1;
+    grid-row: 9;
+}
+
+.para7b{
+    grid-column: 3 / span 1;
+    grid-row: 10;
+}
+
+.para6{
+    grid-column: 3 / span 1;
+    grid-row: 11;
+}
+
+.para6b{
+    grid-column: 3 / span 1;
+    grid-row: 12;
+}
+
+.para5{
+    grid-column: 3 / span 1;
+    grid-row: 13;
+}
+
+.para5b{
+    grid-column: 3 / span 1;
+    grid-row: 14;
+}
+
+.para4{
+    grid-column: 3 / span 1;
+    grid-row: 15;
+}
+
+.para4b{
+    grid-column: 3 / span 1;
+    grid-row: 16;
+}
+
+.para3{
+    grid-column: 3 / span 1;
+    grid-row: 17;
+}
+
+.para3b{
+    grid-column: 3 / span 1;
+    grid-row: 18;
+}
+
+.para2{
+    grid-column: 3 / span 1;
+    grid-row: 19;
+}
+
+.para2b{
+    grid-column: 3 / span 1;
+    grid-row: 20;
+}
+
+.para1{
+    grid-column: 3 / span 1;
+    grid-row: 21;
+}
+
+.para1b{
+    grid-column: 3 / span 1;
+    grid-row: 22;
+}
+
+.paraz10{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 6
+}
+
+.paraz10b{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 7
+}
+
+.parax10{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 3
+}
+
+.parax11{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 4
+}
+
+.parax12{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 5
+}
+
+.parax13{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 6
+}
+
+.parax14{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 7
+}
+
+.parax15{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 8
+}
+
+.parax16{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 9
+}
+
+.parax17{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 10
+}
+
+.parax18{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 11
+}
+
+.parax19{
+    text-align: center; 
+    grid-column: 2 / span 3;
+    grid-row: 12
+}
+
+.title1{
+    grid-column: 2 / span 3;
+    grid-row: 1;
+}
+
+.title2{
+    grid-column: 2 / span 3;
+    grid-row: 2;
+}
+
+/* Other Classes: */
+
+.title-text{
+    text-align: center;
+    color: rgb(167, 0, 0);
+    font-size: xx-large;
+}
+
+.para-text{
+    color: rgb(130, 0, 0);
+    font-size: x-large;
+}
+
+.img{
+    height: 400px;
+    width: 400px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(167, 0, 0);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #ffa8a8;
+}

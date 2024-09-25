@@ -1,0 +1,138 @@
+/* § Main § */
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* § Grids § */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px 230px;
+    grid-template-rows: 100px 100px;
+}
+
+.para1{
+    grid-column: 3 / span 3;
+    grid-row: 3;
+}
+
+.para2{
+    grid-column: 3 / span 3;
+    grid-row: 5;
+}
+
+.para3{
+    grid-column: 3 / span 3;
+    grid-row: 6;
+}
+
+.para4{
+    grid-column: 3 / span 3;
+    grid-row: 7;
+}
+
+.para5{
+    grid-column: 3 / span 3;
+    grid-row: 9;
+}
+
+/* § Text Classes § */
+
+.title-text{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+}
+
+.para-text{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: x-large;
+
+}
+
+/* § Title § */
+
+.title-line1 {
+    height: 1%;
+    width: 1600px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    padding-top: 1px;
+    top: 0;
+    left: 0;
+}
+
+.title-line2 {
+    height: 18%;
+    width: 1600px;
+    position: fixed;
+    z-index: 0;
+    background-color: rgb(0, 0, 0);
+    padding-top: 1px;
+    top: 0;
+    left: 0;
+}
+
+.titlebox {
+    height: 14%;
+    width: 1600px;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 232, 119);
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-size: large;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+/* § Navigation § */
+
+.sidenav {
+    height: 79.1%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 232, 119);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav-line {
+    height: 83%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    padding-top: 1px;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+.sidenav a {
+    padding: 15px 5px 6px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+  
+.sidenav a:hover {
+    color: #ffffff;
+}
+
+.test{
+    height: 300px;
+    color:red;
+    width: 2000px;
+    z-index: 3;
+}

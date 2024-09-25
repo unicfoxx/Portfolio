@@ -1,0 +1,111 @@
+/* :3 ~Main~ :3 */
+
+body{
+    background-color: black;
+    font-family: monospace;
+}
+
+/* :3 ~Grids~ :3 */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px;
+    background-color: black;
+}
+
+.title1{
+    grid-column: 3 / span 3;
+    grid-row: 3;
+}
+
+.title2{
+    grid-column: 3 / span 3;
+    grid-row: 5;
+}
+
+.para1{
+    grid-column: 3 / span 3;
+    grid-row: 4;
+}
+
+.para2{
+    grid-column: 3 / span 3;
+    grid-row: 6;
+}
+
+.para3{
+    grid-column: 3 / span 3;
+    grid-row: 5;
+}
+
+.para4{
+    grid-column: 3 / span 3;
+    grid-row: 6;
+}
+
+.para5{
+    grid-column: 3 / span 3;
+    grid-row: 7;
+}
+
+.para6{
+    grid-column: 3 / span 3;
+    grid-row: 8;
+}
+
+/* :3 ~Text Styles~ :3 */
+
+.title-text{
+    text-align: center;
+    color: rgb(167, 0, 0);
+    font-size: x-large;
+}
+
+.para-text{
+    color: rgb(130, 0, 0);
+    font-size: large;
+}
+
+/* :3 ~Title~ :3 */
+
+.titlebox {
+    height: 14%;
+    width: 1600px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(54, 0, 0);
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-size: large;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgb(60, 0, 0);
+}
+
+/* :3 ~Navigation~ :3 */
+
+.sidenav {
+    height: 85%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(167, 0, 0);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 15px 5px 6px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    text-shadow: 2px 2px 1px rgb(88, 0, 0);
+}
+  
+.sidenav a:hover {
+    color: #4b0000;
+}
