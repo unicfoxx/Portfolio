@@ -1,9 +1,9 @@
 /* Main */
 
 body{
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fprivatephotovault.com%2Fwp-content%2Fuploads%2F2014%2F01%2FFlag-Of-Us-Wallpaper-4722x3176.jpg&f=1&nofb=1&ipt=af08af067e2bf54e0ccfcca1bcbfb255b858536dedafc90deaf7345ae9e4ba1a&ipo=images);
+    
     font-family: monospace;
-    background-size: cover;
+    margin: 0;
 }
 
 /* Grid */
@@ -11,7 +11,7 @@ body{
 .grid-container{
     display: grid;
     grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-    grid-template-rows: 10px;
+    grid-template-rows: 100px 100px;
 }
 
 .grid-container2{
@@ -21,7 +21,12 @@ body{
 }
 
 .logo1{
-    grid-column: 1 /span 1;
+    grid-column: 2 /span 1;
+    grid-row: 1;
+}
+
+.image1{
+    grid-column: 2/ span 2;
     grid-row: 1;
 }
 
@@ -33,74 +38,67 @@ body{
 .nav2{
     grid-column: 7 /span 3;
     grid-row: 1;
-    padding: 0px 0px 0px 0px
 }
 
 .nav3{
-    grid-column: 8 /span 3;
+    grid-column: 9 /span 3;
     grid-row: 1;
 }
 
 .nav4{
-    grid-column: 9 /span 3;
+    grid-column: 10 /span 3;
     grid-row: 1;
-    padding: 0px 0px 0px 0px
 }
 
 .title1{
-    grid-column: 2 /span 3;
-    grid-row: 10;
-    padding: 0px 0px 0px 0px
+    grid-column: 4 /span 9;
+    grid-row: 9;
+    border-style:dashed;
 }
 
 .title2{
     grid-column: 2 /span 3;
-    grid-row: 11;
-    padding: 0px 0px 0px 0px
+    grid-row: 6;
 }
 
 .para3{
     grid-column: 2 /span 3;
-    grid-row: 12;
-    padding: 0px 0px 0px 0px
+    grid-row: 7;
 }
 
 /* Text Style */
 
-.img-text{
-    text-align: center;
-    z-index: 2;
+.image-text {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left:0;
+    top:0;
 }
 
-.img-text a {
+.logo-text{
+    z-index:5;
+}
+
+.logo-text a {
     position:fixed;
 }
 
 .title-text {
-    text-align: center;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
-    z-index: 1;
-    padding-top: 0px;
-}
-
-.title-text a {
-    padding: 0px 0px 0px 0px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #ffffff;
-    display: block;
-    text-shadow: 2px 2px 1px rgb(0, 0, 0);
-    position:fixed;
+    z-index: 8;
+    padding: 20px;
+    text-align: center;
 }
 
 .para-text {
     padding: 0px 0px 0px 0px;
     text-decoration: none;
     font-size: 20px;
-    color: #ffffff;
+    color: #000000;
     display: block;
-    text-align: center;
+    z-index: 2;
 }
 
 
@@ -110,7 +108,7 @@ body{
     height: 80px;
     width: 100%;
     position: fixed;
-    z-index: 0;
+    z-index: 4;
     top: 0;
     left: 0;
     background-color: rgb(51, 0, 255);
@@ -130,4 +128,17 @@ body{
 
 .topnav a:hover{
     color: rgb(52, 52, 52);
+}
+
+/* Page Classes */
+
+.page{
+    width:100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    display: block;
+    position: relative;
+    margin-top: 500px;
+    margin-left: 0;
 }

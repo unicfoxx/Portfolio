@@ -54,7 +54,23 @@ body{
     grid-row: 8;
 }
 
+.para7{
+    grid-column: 3 / span 100%;
+    grid-row: 5;
+}
+
 /* :3 ~Text Styles~ :3 */
+
+.img-text{
+    text-align: center;
+    margin-top: 500px;
+}
+
+.img-text2{
+    z-index: 3;
+    text-align: center;
+    width: 100px;
+}
 
 .title-text{
     text-align: center;
@@ -69,7 +85,7 @@ body{
 
 /* :3 ~Title~ :3 */
 
-.titlebox {
+.titlebox a {
     height: 14%;
     width: 1600px;
     position: fixed;
@@ -83,6 +99,18 @@ body{
     text-align: center;
     text-shadow: 2px 2px 1px rgb(60, 0, 0);
 }
+
+.titlebox a:link{
+    color: red;
+    text-decoration: none;
+}
+.titlebox a:visited{
+    color: red;
+    text-decoration: none;
+}
+
+
+
 
 /* :3 ~Navigation~ :3 */
 
@@ -108,4 +136,11 @@ body{
   
 .sidenav a:hover {
     color: #4b0000;
+}
+
+/* :3 scary stuff :3 */
+
+.warning{
+    color:yellow;
+    
 }
