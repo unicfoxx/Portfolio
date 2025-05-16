@@ -6,6 +6,7 @@ $errors = [];
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST["email"]);
     $password = $_POST["password"];
+    $_SESSION["username"] = $_POST["username"];
 
     $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
@@ -19,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if (password_verify($password, $hashed)) {
             $_SESSION["user_id"] = $id;
             $_SESSION["username"] = $username;
-            header("Location: index.html");
+            header("Location: index.php");
             exit();
         }
     }
@@ -42,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <label>Password</label>
         <input type="password" name="password" required>
         <input type="submit" value="Login">
+        <a href="register.php">Don't have an account?</a>
     </form>
 </body>
 </html>

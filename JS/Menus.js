@@ -29,19 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const setbutton = document.getElementById('set-button');
     const sidenav = document.getElementById('sidenav');
     const sideset = document.getElementById('sideset');
-	const probutton = document.getElementById('profile-button');
     let timeout;
-	
-	// Profile Page Button 
-	// Opens the profile Page
-	document.getElementById('profile-button').addEventListener('click', function () {
-    const profilePage = document.getElementById('profile-page');
-    if (profilePage.style.display === 'flex') {
-        profilePage.style.display = 'none';
-    } else {
-        profilePage.style.display = 'flex';
-    }
-	});
 
     // Side Navigation Button
     // Makes the nav button rotate 90 deg by adding a class to the classlist

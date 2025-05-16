@@ -26,6 +26,7 @@ a:hover {
     opacity: 0.6;
     cursor: pointer;
     transition: 0.25s !important;
+    -webkit-text-stroke: 0.4px rgb(255, 0, 208); /* Pink outline */
 }
 
 /* 
@@ -321,33 +322,31 @@ The user profile where the name and email are displayed
     position: fixed;
     z-index: 15;
 	border-radius: 5px;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
 }
 
-#profile-button {
-	top: 0.8em;
-    right: 4em;
-    width: 2.4em;
-    height: 2.4em;
-    position: fixed;
-    z-index: 16;
-    transition: transform 0.2s ease-out;
-    cursor: pointer;
-	background-color: black;
-	border-radius: 50px;
+#profile-page h2{
+    padding-top: 1em;
+    position: relative;
+    color: rgb(0, 0, 0);
+    left: 2em;
+    margin: 0;
 }
+
+/* Buttons in profile page */
 
 .login-button {
 	position: relative;
-	top: 11em;
-	left: 1em;
+	left: 2em;
+    top: 1em;
 	margin: 0.5em;
 	height: 2em;
 	width: 4em;
 	background-color: black;
 	color: white;
 	font-weight: 600;
-	padding: 0.5rem 1rem;
+	padding: 0.5em 1em;
 	border: none;
 	border-radius: 0.75rem;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -356,7 +355,104 @@ The user profile where the name and email are displayed
 	text-decoration: none;
 }
 
+/* Profile picture styles */
 
+#profile-picture-button {
+    position: fixed;
+    z-index: 99;
+    right: 4em;
+    top: 0.8em;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#profile-picture-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#profile-picture {
+    position: relative;
+    z-index: 99;
+    left: 2em;
+    top: 0.8em;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 0;
+}
+
+/* Profile */
+
+#dashboard {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: rgb(255, 53, 130);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+#avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+#sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#sidebar nav a {
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#sidebar nav a:hover {
+    background-color: #222;
+    transform: translateY(-2px);
+}
+
+#content {
+    flex: 1;
+    padding: 60px;
+    background-color: rgba(255, 53, 130, 0.1);
+    overflow-y: auto;
+    color: #222;
+}
+
+#content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: rgb(255, 53, 130);
+}
+
+#content p {
+    font-size: 18px;
+    color: #444;
+}
 
 /* 
 :3 ~Login Page~ :3 
@@ -423,55 +519,16 @@ form input[type="submit"]:hover {
     background-color: #ff66b2;
 }
 
-/* Profile page styles */
-#profilepage {
-    text-align: center;
-    background-color: #222;
-    padding: 30px;
-}
-
-#profilepage h2 {
-    font-size: 28px;
-}
-
-#profilepage a {
+form a {
     color: pink;
     text-decoration: none;
-    font-size: 16px;
+    margin: 120px;
 }
 
-#profilepage a:hover {
-    text-decoration: underline;
+form a:hover {
+    color: #ff66b2;
 }
 
-#profilepage p {
-    font-size: 18px;
-}
-
-/* Profile page styles */
-#profilepage {
-    text-align: center;
-    background-color: #222;
-    padding: 30px;
-}
-
-#profilepage h2 {
-    font-size: 28px;
-}
-
-#profilepage a {
-    color: pink;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-#profilepage a:hover {
-    text-decoration: underline;
-}
-
-#profilepage p {
-    font-size: 18px;
-}
 /* 
 :3 ~Footer~ :3 
 Displays a footer at the bottom of each page with links to other pages and information
